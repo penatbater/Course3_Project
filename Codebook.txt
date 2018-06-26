@@ -1,0 +1,40 @@
+Getting and Cleaning Data Project Code Book
+
+============================================
+
+The script considers the following data elements inside the 'Dataset':
+- activity_labels.txt
+- features.txt
+under the test folder:
+- subject_test.txt
+- X_test.txt
+- y_test.txt
+under the train folder:
+- subject_train.txt
+- X_train.txt
+- y_train.txt
+
+It is understood that the X-data contains the results of the study, the Y-data the corresponding activity understaken, and the subject-data the corresponding subject involved.
+
+The 'test' data has 2947 observations while 'train' has 7352. There are 561 variables in total. There are only, however, 66 variables with means and standard deviations.
+
+========================================================
+
+'rawdata'
+- The entire dataset combined from all of the data sets listed above
+
+'meanstd'
+- An integer list referencing from the list based on features.txt where values end in either mean() or std(), indicating that we want to capture only the variables with means or standard deviations.
+
+'nameslist'
+- A character list with same parameters as 'meanstd', except this has the descriptive names of the data variables
+
+'newdata'
+- Consider this the final full dataset. This data frame includes descriptive variable names, as well as descriptive values for the ActivityLabel column.
+
+'tidydata'
+- A summarized tidy data frame where the values of each person and each activity are averaged.
+
+========================================================
+
+For more information on the variables on the final table, please see 'features_info.txt' inside the 'Dataset' folder.
