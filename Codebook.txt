@@ -18,6 +18,8 @@ It is understood that the X-data contains the results of the study, the Y-data t
 
 The 'test' data has 2947 observations while 'train' has 7352. There are 561 variables in total. There are only, however, 66 variables with means and standard deviations.
 
+'features' and 'activity' are the labels of the variables and activity, respectively.
+
 ========================================================
 
 'rawdata'

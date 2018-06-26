@@ -7,14 +7,14 @@ if("dplyr" %in%  rownames(installed.packages()) == FALSE){
 library(dplyr)
 
 ## puts all elements into data frames
-subtest <- read.table("./Dataset/test/subject_test.txt")
-Ytest <- read.table("./Dataset/test/y_test.txt")
-Xtest <- read.table("./Dataset/test/X_test.txt")
-subtrain <- read.table("./Dataset/train/subject_train.txt")
-Ytrain <- read.table("./Dataset/train/y_train.txt")
-Xtrain <-read.table("./Dataset/train/X_train.txt")
-features <- read.table("./Dataset/features.txt")
-activity <- read.table("./Dataset/activity_labels.txt")
+subtest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
+Ytest <- read.table("./UCI HAR Dataset/test/y_test.txt")
+Xtest <- read.table("./UCI HAR Dataset/test/X_test.txt")
+subtrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
+Ytrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
+Xtrain <-read.table("./UCI HAR Dataset/train/X_train.txt")
+features <- read.table("./UCI HAR Dataset/features.txt")
+activity <- read.table("./UCI HAR Dataset/activity_labels.txt")
 
 ## Step 1: combines all dataframes into one
 rawdata <- bind_rows(bind_cols(subtest, Ytest, Xtest), bind_cols(subtrain,Ytrain,Xtrain))

@@ -18,4 +18,4 @@ Lastly, the script creates a separate tidy data set with the averages of each va
 For further data analysis, 'new data' is the final full dataframe, while 'tidy data' is the summarized dataframe.
 
 
-IMPORTANT: For the script to run properly, the folder 'Dataset' must be on the same environment.
+IMPORTANT: For the script to run properly, the folder 'UCI HAR Dataset' must be on the same environment as the script.
